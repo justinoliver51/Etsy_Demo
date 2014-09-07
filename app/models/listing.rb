@@ -14,4 +14,7 @@ class Listing < ActiveRecord::Base
 
   validates :name, :description, :price, presence: true
   validates :price, numericality: { greater_than: 0}
+
+  # Links listings with users (after adding to database a user_id in Listings)
+  belongs_to :user
 end
