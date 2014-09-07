@@ -37,6 +37,9 @@ gem "paperclip-dropbox", ">= 1.1.7"
 # Enables information hiding for Dropbox
 gem "figaro"
 
+# Flexible authentication solution for users
+gem "devise"
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
