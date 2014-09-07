@@ -29,8 +29,13 @@ group :development do
   gem 'spring'
 end    
 
-# Added these in  - Justin
+# Added everything below this line  - Justin
+# Enables easy uploading of images
 gem 'paperclip', '~> 4.2'
+gem "paperclip-dropbox", ">= 1.1.7"
+
+# Enables information hiding for Dropbox
+gem "figaro"
 
 group :production do
   gem 'pg'
