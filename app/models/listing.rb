@@ -17,4 +17,7 @@ class Listing < ActiveRecord::Base
 
   # Links listings with users (after adding to database a user_id in Listings)
   belongs_to :user
+
+  # Links listing with orders (users can order multiple items of the same listing)
+  has_many :orders
 end
